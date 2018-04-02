@@ -11,7 +11,7 @@ def bubble_sort(array)
             next if i == arr_length-counter
             # avoid nil item
             unless array[i+1].nil?
-                # swap if the first item is less than the second
+                # swap if the first item is more than the second
                 if array[i] > array[i+1]
                     array[i], array[i+1] = array[i+1], array[i]
                     # increment the swap_counter by 1 each time there is a swap
